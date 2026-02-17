@@ -9,9 +9,19 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "types": ["node", "express"],    
+    "types": [
+      "node",
+      "express"
+    ],
     "moduleResolution": "node"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*",
+    "src/modules/auth/user.model.ts",
+    "user.handler.ts",
+    "src/modules/auth/auth.routes.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

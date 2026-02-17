@@ -5,12 +5,12 @@ dotenv.config();
 
 interface JwtRequest extends Request {
     user?: {
-      userId: string;
-    role: string;
+        userId: string;
+        role: string;
     };
-  }
+}
 
-  export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
+export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
 
 
     try {
